@@ -51,12 +51,14 @@ const accounts = [
 	];
 
 
-(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-	(n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-  var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-  var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-DT38BLOGLNV8-2");
-
+<!-- Gainsight PX Tag-->
+  
+  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-6EJAJ3QDC2HE-2-3");
+<!-- Gainsight PX Tag-->
 
 
 (function (){
@@ -146,7 +148,7 @@ function generateRandomUser(){
 function loginExistingUser(){
 	fetch('https://api.aptrinsic.com/v1/users?pageSize=1000', {
 		method: "GET",
-		headers: {"X-APTRINSIC-API-KEY": "e7781811-93e6-43bf-bd98-8bc8f4f6d867"}
+		headers: {"X-APTRINSIC-API-KEY": "be77d50f-b925-4a80-958b-407b7eea2606"}
 	  })
 	  .then(response => response.json()) 
 	  .then(data => {
